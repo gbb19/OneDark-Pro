@@ -45,19 +45,19 @@ export default {
   },
   textColors: {
     classic: {
-      chalky: adjustBrightness('#dfc184', 0.95),       // (Yellow) Zed Constant 
-      coral: adjustBrightness('#d07277', 0.95),        // (Red) Zed Property/Tag
-      dark: adjustBrightness('#5d636f', 0.95),         // (Grey) Zed Comment
-      deepRed: adjustBrightness('#b1574b', 0.95),      // (Dark Red) Zed Punctuation Special
-      error: adjustBrightness('#d07277', 0.95),        // (Error) Zed Error
-      fountainBlue: adjustBrightness('#6eb4bf', 0.95), // (Cyan) Zed Type/Operator
-      green: adjustBrightness('#a1c181', 0.95),        // (Green) Zed String
-      invalid: adjustBrightness('#ffffff', 0.95),      // (White)
-      lightDark: adjustBrightness('#878e98', 0.95),    // (Grey) Zed Doc Comment/Placeholder
-      lightWhite: adjustBrightness('#acb2be', 0.95),   // (Fg) Zed Editor Foreground
-      malibu: adjustBrightness('#73ade9', 0.95),       // (Blue) Zed Function
-      purple: adjustBrightness('#b477cf', 0.95),       // (Purple) Zed Keyword
-      whiskey: adjustBrightness('#bf956a', 0.95),      // (Orange) Zed Number/Boolean
+      chalky: adjustBrightness('#dfc184', 0.96),       // (Yellow) Zed Constant 
+      coral: adjustBrightness('#d07277', 0.96),        // (Red) Zed Property/Tag
+      dark: adjustBrightness('#5d636f', 0.96),         // (Grey) Zed Comment
+      deepRed: adjustBrightness('#b1574b', 0.96),      // (Dark Red) Zed Punctuation Special
+      error: adjustBrightness('#d07277', 0.96),        // (Error) Zed Error
+      fountainBlue: adjustBrightness('#6eb4bf', 0.96), // (Cyan) Zed Type/Operator
+      green: adjustBrightness('#a1c181', 0.96),        // (Green) Zed String
+      invalid: adjustBrightness('#ffffff', 0.96),      // (White)
+      lightDark: adjustBrightness('#878e98', 0.96),    // (Grey) Zed Doc Comment/Placeholder
+      lightWhite: adjustBrightness('#acb2be', 0.96),   // (Fg) Zed Editor Foreground
+      malibu: adjustBrightness('#73ade9', 0.96),       // (Blue) Zed Function
+      purple: adjustBrightness('#b477cf', 0.96),       // (Purple) Zed Keyword
+      whiskey: adjustBrightness('#bf956a', 0.96),      // (Orange) Zed Number/Boolean
     },
     vivid: {
       chalky: '#e5c07b',
