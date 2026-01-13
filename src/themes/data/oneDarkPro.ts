@@ -1,3 +1,48 @@
+const uiColorsZed = {
+  // Base backgrounds
+  "editor.background": "#20242AFF",
+  "sideBar.background": "#262A31FF",
+  "activityBar.background": "#262A31FF",
+  "activityBar.border": "#20242A",
+  "statusBar.background": "#20242AFF",
+  "statusBar.noFolderBackground": "#20242AFF",
+  "statusBar.debuggingBackground": "#2B303AFF",
+  "titleBar.activeBackground": "#20242AFF",
+  "titleBar.inactiveBackground": "#20242AFF",
+  "editorGroupHeader.tabsBackground": "#262A31FF",
+  "tab.activeBackground": "#20242AFF",
+  "tab.inactiveBackground": "#262A31FF",
+  "editorGutter.background": "#20242AFF",
+  "panel.background": "#262A31FF",
+  "terminal.background": "#20242AFF",
+
+  // Line highlight / selection
+  "editor.lineHighlightBackground": "#2B303AFF",
+  "editor.selectionBackground": "#363C47AA",
+  "editor.selectionHighlightBackground": "#363C4733",
+  "editorIndentGuide.activeBackground1": "#363C47",
+  "editorIndentGuide.background1": "#2B303A",
+
+  // Text & UI
+  "editor.foreground": "#D0D4DC",
+  "foreground": "#D0D4DC",
+  "descriptionForeground": "#A0A6B0",
+  "focusBorder": "#363C47FF",
+  "dropdown.background": "#262A31FF",
+  "input.background": "#262A31FF",
+  "input.border": "#363C47FF",
+  "button.background": "#363C47FF",
+
+  // Disabled / ignored
+  "disabledForeground": "#858B98FF",
+
+  // Borders
+  "panel.border": "#444B58FF",
+  "sideBar.border": "#444B58FF",
+  "editorGroup.border": "#444B58FF",
+  "statusBar.border": "#444B58FF",
+  "tab.border": "#444B58FF",
+};
 export default {
   "actionBar.toggledBackground":"#525761",
   'activityBar.background': '#282c34',
@@ -142,4 +187,6 @@ export default {
   'tree.indentGuidesStroke': '#ffffff1d',
   'walkThrough.embeddedEditorBackground': '#2e3440',
   'welcomePage.buttonHoverBackground': '#404754',
+  ...uiColorsZed,
 }
+
