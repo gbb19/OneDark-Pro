@@ -14,6 +14,14 @@ enum colorType {
   deepRed = 'deepRed',
 }
 
+function adjustBrightness(hex: string, factor: number) {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  const toHex = (n: number) => Math.min(255, Math.max(0, Math.round(n * factor))).toString(16).padStart(2, '0');
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
 export default {
   editorThemes: {
     Ayu: () => import('./data/ayu'),
@@ -37,19 +45,19 @@ export default {
   },
   textColors: {
     classic: {
-      chalky: '#e5c07b',
-      coral: '#e06c75',
-      dark: '#5c6370',
-      deepRed: '#BE5046',
-      error: '#f44747',
-      fountainBlue: '#56b6c2',
-      green: '#98c379',
-      invalid: '#ffffff',
-      lightDark: '#7f848e',
-      lightWhite: '#abb2bf',
-      malibu: '#61afef',
-      purple: '#c678dd',
-      whiskey: '#d19a66',
+      chalky: adjustBrightness('#dfc184', 0.95),       // (Yellow) Zed Constant 
+      coral: adjustBrightness('#d07277', 0.95),        // (Red) Zed Property/Tag
+      dark: adjustBrightness('#5d636f', 0.95),         // (Grey) Zed Comment
+      deepRed: adjustBrightness('#b1574b', 0.95),      // (Dark Red) Zed Punctuation Special
+      error: adjustBrightness('#d07277', 0.95),        // (Error) Zed Error
+      fountainBlue: adjustBrightness('#6eb4bf', 0.95), // (Cyan) Zed Type/Operator
+      green: adjustBrightness('#a1c181', 0.95),        // (Green) Zed String
+      invalid: adjustBrightness('#ffffff', 0.95),      // (White)
+      lightDark: adjustBrightness('#878e98', 0.95),    // (Grey) Zed Doc Comment/Placeholder
+      lightWhite: adjustBrightness('#acb2be', 0.95),   // (Fg) Zed Editor Foreground
+      malibu: adjustBrightness('#73ade9', 0.95),       // (Blue) Zed Function
+      purple: adjustBrightness('#b477cf', 0.95),       // (Purple) Zed Keyword
+      whiskey: adjustBrightness('#bf956a', 0.95),      // (Orange) Zed Number/Boolean
     },
     vivid: {
       chalky: '#e5c07b',
